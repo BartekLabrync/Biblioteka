@@ -20,13 +20,13 @@ public class MenuController {
         return "myAccount";
     }
 
-    @GetMapping("/users")
-    public String users(){
-        return "users";
-    }
-
     @GetMapping("/addNewUser")
     public String addNewUser(){
         return "addNewUser";
+    }
+
+    @GetMapping("/login")
+    public String login(){
+        return "login";
     }
 }
