@@ -11,3 +11,11 @@ public class BibliotekaApplication {
     }
 
 }
+/*TODO: 07.06.2023
+    1. Na stronie books.html zrobić filtrację listy książek po autorze.
+    2. Zrobić usuwanie książek
+    3. Logowanie, rpzechowywanie zalogowanego użytkownika
+    4. Dodać role użytkownikom
+    5. filtrować opcje po rolach użytkownikach
+
+ */

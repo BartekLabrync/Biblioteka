@@ -10,9 +10,9 @@ public class MenuController {
         return "mainMenu";
     }
 
-    @GetMapping("/books")
-    public String books(){
-        return "books";
+    @GetMapping("/mainMenu")
+    public String mainMenu2(){
+        return "mainMenu";
     }
 
     @GetMapping("/myAccount")
@@ -20,10 +20,6 @@ public class MenuController {
         return "myAccount";
     }
 
-    @GetMapping("/addNewUser")
-    public String addNewUser(){
-        return "addNewUser";
-    }
 
     @GetMapping("/login")
     public String login(){
