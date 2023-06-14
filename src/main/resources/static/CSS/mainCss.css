@@ -1,0 +1,24 @@
+.bg-body-container{
+    background-color: #210D47;
+}
+
+.bg-header-container{
+    background-color: #5D24C7;
+    color: white;
+    text-align: center;
+}
+
+.bg-main-container{
+    background-color: white;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #5D24C7;
+}
+
