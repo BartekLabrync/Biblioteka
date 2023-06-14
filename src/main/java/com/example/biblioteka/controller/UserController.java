@@ -39,27 +39,4 @@ public class UserController {
         return "addNewUser";
     }
 
-//
-//
-//    @GetMapping("/create")
-//    public String createQuizForm(Model model){
-//        model.addAttribute("quizViewModel", new QuizViewModel());
-//        model.addAttribute("categories", quizService.findAllCategories());
-//        return "/quiz/create";
-//    }
-//
-//    @PostMapping("/create")
-//    public String createQuiz(
-//            @Valid QuizViewModel quizViewModel,
-//            BindingResult errors,
-//            Model model){
-//        if (errors.hasErrors()){
-//            model.addAttribute("categories", quizService.findAllCategories());
-//            return "/quiz/create";
-//        }
-//        final Quiz quiz = QuizMapper.mapToQuiz(quizViewModel);
-//        quizService.saveQuiz(quiz);
-//        model.addAttribute("quizzes", quizService.findAllQuizzes());
-//        return "/quiz/index";
-//    }
 }
