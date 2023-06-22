@@ -1,9 +1,11 @@
 .bg-body-container{
-    background-color: #210D47;
+    /*background-color: rgb(247, 249, 251);*/
+    background-image: url('../images/background.jpg');
+
 }
 
 .bg-header-container{
-    background-color: #5D24C7;
+    background-color: #708C81;
     color: white;
     text-align: center;
 }
@@ -19,7 +21,7 @@
 .grow:hover {
     transform: scale(1.1);
     background-color: white;
-    color: #5D24C7;
+    color: #708C81;
 }
 
 .bg-background{
