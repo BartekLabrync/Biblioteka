@@ -9,6 +9,10 @@ public class MenuController {
     public String mainMenu(){
         return "mainMenu";
     }
+    @GetMapping("/nav.html")
+    public String nav(){
+        return "nav";
+    }
 
     @GetMapping("/mainMenu")
     public String mainMenu2(){
