@@ -8,38 +8,38 @@
     <script src="js/mainJS.js"></script>
 
 </head>
-<body>
-<div class="bg-body-container">
-    <header class="sticky-top bg-header-container">
-        <h1>Lista książek</h1>
-        <nav class="navbar navbar-expand-lg d-flex justify-content-center" w3-include-html="nav.html"></nav>
-    </header>
-    <div class="container bg-main-container">
-    <div class="content">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Login</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="user:${users}">
-                <th scope="row" th:text="${user.getPersonID()}"></th>
-                <td th:text="${user.getFirstName()}"></td>
-                <td th:text="${user.getLastName()}"></td>
-                <td th:text="${user.getLogin()}"></td>
-            </tr>
-            </tbody>
-        </table>
+<body class="bg-background">
+    <div class="bg-body-container">
+        <header class="sticky-top bg-header-container">
+            <h1>Lista książek</h1>
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center" w3-include-html="nav.html"></nav>
+        </header>
+            <div class="container bg-main-container">
+                <div class="content">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Login</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="user:${users}">
+                            <th scope="row" th:text="${user.getPersonID()}"></th>
+                            <td th:text="${user.getFirstName()}"></td>
+                            <td th:text="${user.getLastName()}"></td>
+                            <td th:text="${user.getLogin()}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <footer>
+                Stopka
+            </footer>
+        </div>
     </div>
-    <footer>
-        Stopka
-    </footer>
-</div>
-</div>
 <script>
     includeHTML();
 </script>

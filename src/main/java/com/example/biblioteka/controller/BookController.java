@@ -51,6 +51,29 @@ public class BookController {
 
         return books;
     }
+    @PostMapping("/findByTitle")
+    public String findByTitle(
+            String title,
+            Model model){
+        List<BookEntity> books = findBooksByTitle(title);
+
+        model.addAttribute("books", books);
+
+        return "books";
+    }
+
+    private List<BookEntity> findBooksByTitle(String title){
+        Iterable<BookEntity> allBooks = bookRepository.findAll();
+        List<BookEntity> books = new ArrayList<>();
+
+        for(BookEntity book : allBooks){
+            if(book.getTitle().equals(title)) {
+                books.add(book);
+            }
+        }
+
+        return books;
+    }
 
     @PostMapping("/deleteBook")
     public String deleteBook(

@@ -22,4 +22,5 @@ public class BookEntity {
     private String authorName;
     private String authorLastName;
     private LocalDate publicationDate;
+    private String isAvailable;
 }
