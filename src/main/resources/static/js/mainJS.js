@@ -25,3 +25,8 @@ function includeHTML() {
         }
     }
 }
+// const myCarousel = document.carouselExampleAutoplaying('myCarousel')
+//
+// myCarousel.addEventListener('slide.bs.carousel', event => {
+//     // do something...
+// })
