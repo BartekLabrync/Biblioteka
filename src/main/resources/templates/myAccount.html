@@ -9,7 +9,7 @@
     <script src="js/mainJS.js"></script>
 
 </head>
-<body class="bg-background">
+<body>
 <div class="bg-body-container">
     <header class="sticky-top bg-header-container">
         <h1>Lista książek</h1>
@@ -17,7 +17,12 @@
     </header>
     <div class="container bg-main-container">
     <div class="content">
-        Opis strony
+        <span th:text="${user.getLogin()}"> </span>
+        <span th:text="${user.getEmail()}"> </span>
+        <span th:text="${user.getFirstName()}"> </span>
+        <span th:text="${user.getLastName()}"> </span>
+
+        <a href="logout">Wyloguj</a>
     </div>
     <footer>
         Stopka

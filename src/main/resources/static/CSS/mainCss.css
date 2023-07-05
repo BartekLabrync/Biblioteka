@@ -1,7 +1,12 @@
+body{
+    /*background-image: url("../images/background.jpg");*/
+    background-image: url("../images/biblioteka.jpg");
+}
+
 .bg-body-container{
     /*background-color: rgb(247, 249, 251);*/
-    /*background-image: url('../images/background.jpg');*/
-    background-image: url('../images/biblioteka.jpg');
+    /*!*background-image: url('../images/background.jpg');*!*/
+    /*background-image: url('../images/biblioteka.jpg');*/
 
 }
 
@@ -29,10 +34,7 @@
 
 }
 
-.bg-background{
-    /*background-image: url("../images/background.jpg");*/
-    background-image: url("../images/biblioteka.jpg");
-}
+
 
 
 

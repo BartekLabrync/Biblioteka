@@ -1,5 +1,6 @@
 package com.example.biblioteka.model;
 
+import com.example.biblioteka.dto.UserDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,4 +24,5 @@ public class User {
     private String email;
     private String address;
     private String password;
+
 }

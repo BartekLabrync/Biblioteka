@@ -17,18 +17,15 @@
     <div class="container bg-main-container">
     <div class="content">
      <h3>Panel Logowania</h3>
-<!--        <div class ="row">-->
-<!--            <div class = "col-sm-5" style="background: darkgray">-->
-<!--                <div class="panel-body">-->
-                    <form>
+                    <form th:action="@{/login}" method="post" th:object="${user}">
                         <div class="mb-3">
                             <label for="inputLogin" class="form-label">Login</label>
-                            <input type="login" class="form-control" id="inputLogin" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" id="inputLogin" aria-describedby="emailHelp" th:field="*{inputLogin}">
                             <div id="loginHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="password" class="form-control" id="inputPassword" th:field="*{inputPassword}">
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -37,29 +34,6 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
 
-<!--                    <form class="form-horizontal" role="form">-->
-<!--                        <div class="form-group">-->
-<!--                            <label for="inputLogin" class="col-lg-2 col-sm-2 control-label">Login</label>-->
-<!--                            <div class="col-lg-10">-->
-<!--                                <input class="form-control" id="inputLogin" placeholder="Login" type="text">-->
-<!--                                <p class="help-block">Example block-level help text here.</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="form-group">-->
-<!--                            <label for="inputPassword1" class="col-lg-2 col-sm-2 control-label">Password</label>-->
-<!--                            <div class="col-lg-10">-->
-<!--                                <input class="form-control" id="inputPassword1" placeholder="Password" type="password">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="form-group">-->
-<!--                            <div class="col-lg-offset-2 col-lg-10">-->
-<!--                                <button type="submit" class="btn btn-danger">Zaloguj</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </form>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
     </div>
     <footer>
         Stopka

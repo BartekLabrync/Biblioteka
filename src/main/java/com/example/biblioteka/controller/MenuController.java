@@ -1,7 +1,11 @@
 package com.example.biblioteka.controller;
 
+import com.example.biblioteka.model.User;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
 public class MenuController {
@@ -19,14 +23,11 @@ public class MenuController {
         return "mainMenu";
     }
 
-    @GetMapping("/myAccount")
-    public String myAccount(){
-        return "myAccount";
+    @GetMapping(value = "/logout")
+    public String logout(Model model, HttpSession session){
+
+        session.invalidate();
+        return "redirect:/";
     }
 
-
-    @GetMapping("/login")
-    public String login(){
-        return "login";
-    }
 }
